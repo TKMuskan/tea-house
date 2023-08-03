@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/black-tea.png" type="image/x-icon">
+    <title>Tea House</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/804ff399ff.js" crossorigin="anonymous"></script>
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'base-color': '#1C1C1C',
+                        'note-color': '#777',
+
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Gogle Fonts Manrope and Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-Manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .font-Plus-Jakarta-Sans {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-Manrope">
+    <!-- Header-Banner Part-->
+    <header class="container mx-auto px-6 lg:pl-28">
+        <div class="hero lg:-mt-5">
+            <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+                <div class="">
+                    <img src="images/banner.png" class="max-w-md xl:max-w-lg lg:pt-20"/>
+                    <div class="flex justify-center items-center gap-2 xl:gap-3 bg-white drop-shadow-xl py-2 xl:p-5 w-48 xl:w-60 ml-16 -mt-16 rounded-lg">
+                        <i class="fa-solid fa-star text-2xl xl:text-3xl text-[#FF8938]"></i>
+                        <div>
+                            <h3 class="text-xl xl:text-3xl font-extrabold">5.00</h3>
+                            <p class="text-sm xl:text-lg text-note-color">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-4xl lg:text-5xl xl:text-7xl font-extrabold text-base-color pt-10 lg:pt-0">It's good
+                        <br>
+                        tea time at The <br><span class="text-amber-700">Tea House</span></h1>
+                    <p class="py-6 lg:text-xl text-note-color font-medium">Tea and Botanical Solutions Supplier Give
+                        Optimum Satisfaction To Your Taste Buds.</p>
+                    <button
+                        class="btn btn-primary lg:text-xl border-none capitalize bg-gradient-to-r from-[#FF8938] from-0% to-[#F00] to-100%">Explore
+                        More
+                        <img src="images/arrow.png" alt="" class="w-3">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-6"></main>
+    <footer></footer>
+</body>
+
+</html>
